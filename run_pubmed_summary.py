@@ -25,3 +25,6 @@ with mp.Pool(processes=8) as pool:
 # count the number of available files
 available_count = sum(results)
 print(f"{available_count} files available for download")
+
+
+##### need to add the summarization code for each .txt file in the directory
