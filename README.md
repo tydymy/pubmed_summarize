@@ -5,8 +5,8 @@ Certainly, here's a README markdown file explaining the code I provided:
 This code utilizes Biopython and spaCy to extract PubMed ID and create NLP summaries for PubMed articles. The pipeline is divided into the following steps:
 
 1. Use Biopython's Entrez API to search for and retrieve PubMed IDs for a given search query.
-2. Download the PubMed article XML files corresponding to each retrieved PubMed ID from an Amazon S3 bucket.
-3. Parse the article XML files using Biopython's `Medline` module to extract the article text.
+2. Download the PubMed article XML/txt files corresponding to each retrieved PubMed ID from an Amazon S3 bucket.
+3. Parse the article XML files using Biopython's `Medline` module to extract the article text. (not required)
 4. Process the article text using spaCy's NLP pipeline to generate a summary of the article.
 5. Save the summary in a CSV file named after the original article file.
 
